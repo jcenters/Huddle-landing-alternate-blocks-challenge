@@ -183,10 +183,6 @@ footer p,ul {
     color: hsl(193, 100%, 96%);
 }
 
-.contact {
-    width: 100%;
-}
-
 .contact ul {
     list-style-position: outside;
     padding: 0;
@@ -232,16 +228,13 @@ li {
 }
 
 .fab {
-    /* display: flex; */
-    /* justify-content: center;
-    align-content: center;
-    align-items: center; */
     width: 1em;
     height: 1em;
     border: 1px solid hsl(193, 100%, 96%);
     padding: .5em;
     margin: .5em;
     border-radius: 50%;
+    text-align: center;
 }
 
 .copyright {
@@ -250,6 +243,11 @@ li {
 }
 
 @media screen and (min-width: 1096px) {
+    
+    header {
+        background-image: url("images/bg-hero-desktop.svg");
+    }
+
     .bottom-header {
         align-items: flex-start;
         text-align: left;
@@ -266,6 +264,11 @@ li {
 
     .section-content {
         text-align: left;
+        max-width: 600px;
+    }
+
+    .section-image {
+        max-width: 600px;
     }
 
     .flipped {
@@ -284,7 +287,6 @@ li {
         width: 100%;
     }
     
-
     nav {
         max-width: 30%;
         margin: 0 auto;
@@ -306,6 +308,7 @@ li {
 
     .social {
         max-width: 10em;
+        margin-right: 2em;
     }
 
     .copyright {
