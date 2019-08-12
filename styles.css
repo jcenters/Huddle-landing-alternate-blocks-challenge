@@ -57,8 +57,8 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     /* align-items: center; */
-    justify-content: space-between;
-    margin-top: 2em;
+    justify-content: center;
+    margin-top: 2.5em;
 }
 
 .bottom-header {
@@ -68,7 +68,7 @@ img {
     align-items: center;
     text-align: center;
     padding: 2em;
-    max-width: 600px;
+    max-width: 500px;
     
 }
 
@@ -77,7 +77,7 @@ img {
 }
 
 .header-image {
-    max-width: 600px;
+    max-width: 500px;
 }
 
 button {
@@ -92,6 +92,8 @@ button {
 .try-it-free {
     width: 175px;
     padding: 5px 0 5px 0;
+    background-color: white;
+    color: hsl(192, 100%, 9%);
 }
 
 .get-started {
@@ -105,51 +107,188 @@ button {
 .main {
     display: flex;
     flex-direction: column;
+    /* align-content: center; */
+    /* justify-content: center; */
     align-items: center;
-    width: 75%;
-    margin: 0 auto;
+    width: 100%;
+    /* margin: 0 auto; */
     /* flex: 1; */
     /* margin: 3em;  */
     /* text-align: center; */
 }
 
 section {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     border-radius: 10px;
     box-shadow: 0px 1px 5px 0px hsl(192, 100%, 9%);
     margin: 2em;
-    padding: 3em;
+    /* padding: 3em; */
     /* max-width: 70%; */
     background-color: white;
-    width: 100%;
+    align-content: center;
+    /* width: 100%; */
 }
+
+.section-content {
+    /* justify-content: center; */
+    text-align: center;
+    max-width: 400px;
+    padding: 3em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-image {
+    max-width: 400px;
+    padding: 3em 1em 1em 1em;
+}
+
+/* section h2,p {
+    display: inline-block;
+} */
 
 #call-to-action {
     position: relative;
     top: 100px;
-    /* padding: 3em 1em 3em 1em; */
+    padding: 3em 1em 3em 1em;
     /* z-index: 2; */
     /* width: 100%; */
-    max-width: 600px;
+    max-width: 800px;
+    /* text-align: center; */
     /* margin: 2em auto; */
 }
 
 footer {
     background-color: hsl(192, 100%, 9%);
-    color: hsl(193, 100%, 96%) !important;
+    display: flex;
     height: 150%;
+    flex-wrap: wrap;
     /* position: relative; */
     /* z-index: 1; */
     padding: 10em 1em 2em 1em;
+    /* justify-content: space-between; */
+    line-height: 2;
+}
+
+.footer-logo {
+    filter: invert(.5);
+}
+
+footer p,ul {
+    color: hsl(193, 100%, 96%);
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+.address {
+    list-style-image: url(images/icon-location.svg);
+}
+
+.phone {
+    list-style-image: url(images/icon-phone.svg);
+}
+
+.email {
+    list-style-image: url(images/icon-email.svg);
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
 .social {
-    list-style: none;
     display: flex;
     justify-content: center;
-    /* padding-top: 150px; */
+    width: 100%;
 }
 
-.social ul > li {
-    border: 1px hsl(193, 100%, 96%);
+.social ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+li {
+    margin: 1em 0 1em 0;
+}
+
+
+.fab {
+    display: flex;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    border: 1px solid hsl(193, 100%, 96%);
+    padding: .5em;
+    margin: .5em;
+    border-radius: 50%;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 1096px) {
+    .bottom-header {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .bottom-header-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        justify-content: space-between;
+        margin-top: 2.5em;
+    }
+
+    .section-content {
+        text-align: left;
+    }
+
+    .flipped {
+        flex-flow: row-reverse;
+    }
+
+    footer {
+        justify-content: space-evenly;
+    }
+
+    .contact {
+        max-width: 15em;
+    }
+
+    nav {
+        max-width: 8em;
+        margin: 0 25px 0 25px;
+        /* display: block; */
+        column-count: 2;
+    }
+
+    .social {
+        max-width: 4em;
+    }
+
+    .copyright {
+        text-align: end;
+    }
 }
