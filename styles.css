@@ -175,9 +175,9 @@ footer {
     line-height: 2;
 }
 
-.footer-logo {
+/* .footer-logo {
     filter: invert(.5);
-}
+} */
 
 footer p,ul {
     color: hsl(193, 100%, 96%);
