@@ -187,9 +187,10 @@ footer p,ul {
 }
 
 .contact ul {
-    list-style-position: inside;
+    list-style-position: outside;
     padding: 0;
-    margin: 0;
+    padding-left: .5em;
+    margin: 0 0 0 1em;
 }
 
 .address {
@@ -229,10 +230,11 @@ li {
     margin: 1em 0 1em 0;
 }
 
-
 .fab {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center;
+    align-content: center;
+    align-items: center; */
     width: 1em;
     height: 1em;
     border: 1px solid hsl(193, 100%, 96%);
@@ -277,15 +279,32 @@ li {
         max-width: 15em;
     }
 
+    .footer-logo {
+        width: 100%;
+    }
+    
+
     nav {
-        max-width: 8em;
-        margin: 0 25px 0 25px;
+        max-width: 30%;
+        margin: 0 auto;
         /* display: block; */
-        column-count: 2;
+        /* column-count: 2; */
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        /* max-height: 6em; */
     }
 
+   nav ul {
+       list-style-position: inside;
+    /* display: flex;
+    /* justify-content: space-between; */
+    width: 50%;
+    /* flex-wrap: wrap; */
+   } 
+
     .social {
-        max-width: 4em;
+        max-width: 10em;
     }
 
     .copyright {
