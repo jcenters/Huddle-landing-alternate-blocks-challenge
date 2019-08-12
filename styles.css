@@ -75,7 +75,7 @@ img {
   text-align: center;
 }
 
-.bottom-header > p {
+.bottom-header>p {
   color: hsl(192, 100%, 9%);
 }
 
